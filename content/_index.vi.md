@@ -9,7 +9,7 @@ chapter: false
 ### Thông tin sinh viên:
 &emsp; **Họ và tên:** Nguyễn Văn A
 
-&emsp; **Số điện thoại:** 0989888999 
+&emsp; **Số điện thoại:** 0989888999
 
 &emsp; **Email:** Anguyenvan@gmail.com
 
@@ -25,7 +25,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 12/08/2025 đến ngày 12/11/2025
 
-![Ảnh đại diện của bạn](/images/avatar.jpg)
+![Ảnh đại diện của bạn](/images/avatar.png)
 
 
 

@@ -15,13 +15,11 @@ Bạn sẽ thấy 6 điểm cuối VPC hiện có hỗ trợ AWS Systems Manager
 
 ![endpoint](/images/5-Workshop/5.3-S3-vpc/endpoints.png)
 
-
 3. Trong Create endpoint console:
 + Đặt tên cho endpoint: s3-gwe
 + Trong service category, chọn **aws services**
 
 ![endpoint](/images/5-Workshop/5.3-S3-vpc/create-s3-gwe1.png)
-
 
 + Trong **Services**, gõ "s3" trong hộp tìm kiếm và chọn dịch vụ với loại **gateway**
 
