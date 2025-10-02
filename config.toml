@@ -1,8 +1,7 @@
-baseURL = "https://thienluhoan.github.io/workshop-template/"
+baseURL = "https://workshop-sample.fcjuni.com/"
 relativeURLs = false
 canonifyURLs = false
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
 
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
