@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-
 # AWS Cognito + Amplify SDK Workshop
 
 ## Overview
