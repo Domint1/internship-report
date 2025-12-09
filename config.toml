@@ -1,7 +1,9 @@
-baseURL = https://domint1.github.io/FCJ-Internship-Report/"
-relativeURLs = false
-canonifyURLs = false
-defaultContentLanguage = "en"
+baseURL = "https://domint1.github.io/FCJ-Internship-Report/"
+relativeURLs = true
+canonifyURLs = true
+
+# Enable Git info for last modified dates
+enableGitInfo = true
 
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
