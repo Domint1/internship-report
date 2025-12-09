@@ -1,28 +1,68 @@
 ---
 title: "Workshop"
-date: "2025-12-08"
+date: "`r Sys.Date()`"
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
 
-# Secure Hybrid Access to S3 using VPC Endpoints
+{{% notice warning %}}
+**Warning:** The content below is for training and reference purposes only. Please **do not copy verbatim** into official reports or public documentation.
+{{% /notice %}}
 
-#### Overview
+# AWS Cognito + Amplify SDK Workshop
 
-**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
+## Overview
 
-In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
+**Amazon Cognito** is a fully managed user authentication, authorization, and user management service that makes it easy to add sign-up, sign-in, and access control to web and mobile apps.
 
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
-+ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
-+ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
+In this hands-on workshop, you will:
 
-#### Content
+- Create and configure a **Cognito User Pool** from scratch
+- Integrate the latest **AWS Amplify Gen 2 (v6+)** with **Next.js 14 (App Router)**
+- Implement a complete authentication flow:  
+  Sign-up → Email verification → Sign-in → Protected routes → Role-based access
+- Follow production-ready best practices (SSR support, secure token handling, clean architecture)
 
-1. [Workshop overview](5.1-Workshop-overview)
-2. [Prerequiste](5.2-Prerequiste/)
-3. [Access S3 from VPC](5.3-S3-vpc/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
+**Final outcome:** A fully functional, secure Next.js application with user authentication — ready to deploy on Vercel, Netlify, or AWS Amplify Hosting.
+
+## Workshop Contents
+
+1. **[Workshop Overview](5.1-Workshop-overview/)**
+   - What are Amazon Cognito and AWS Amplify?
+   - Why use them together?
+
+2. **[Prerequisites](5.2-Prerequiste/)**
+   - AWS account, IAM user, AWS CLI
+   - Node.js 18+, npm, VS Code
+
+3. **[AWS Cognito Setup](5.3-AWS-Cognito/)**
+   - Create User Pool with email sign-in
+   - Configure password policy, optional MFA, App Client (no client secret)
+   - Create Cognito Groups (admin / user)
+
+4. **[Next.js Project Setup & Amplify Configuration](5.4-Next.js-setup/)**
+   - Scaffold Next.js 14 with App Router + TypeScript + Tailwind CSS
+   - Install `aws-amplify@latest`
+   - Configure environment variables and Amplify SSR mode
+
+5. **[Authentication Functions, UI, and Protected Routes](5.5-Cognito-function/)**
+   - Complete Cognito helpers: signUp, confirmSignUp, signIn, signOut, getCurrentUser, etc.
+   - Global AuthContext + custom `useAuth` hook
+   - Sign-up, email verification, sign-in, and forgot password pages
+   - ProtectedRoute component
+   - Dashboard page displaying user info and role
+
+6. **[Full Testing & Verification](5.6-Testing/)**
+   - End-to-end test checklist
+   - Common errors and troubleshooting tips
+
+7. **[Clean Up Resources](5.7-Cleanup/)**
+   - Delete User Pool and App Client to avoid unwanted charges
+
+---
+
+**Estimated duration:** 3–4 hours  
+**Difficulty:** Intermediate (basic React/Next.js knowledge recommended)
+
+Let’s get started! → Click on 5.1 **[Workshop Overview](5.1-Workshop-overview/)** to begin.

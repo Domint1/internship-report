@@ -1,29 +1,64 @@
 ---
 title: "Workshop"
-date: "2025-12-08"
+date: "`r Sys.Date()`"
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
 
+# Workshop AWS Cognito + Amplify SDK
 
-# Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint
+## Tổng quan
 
-#### Tổng quan
+**Amazon Cognito** là dịch vụ quản lý xác thực người dùng, ủy quyền và quản lý người dùng được quản lý hoàn toàn, giúp dễ dàng thêm đăng ký, đăng nhập và kiểm soát truy cập vào các ứng dụng web và mobile.
 
-**AWS PrivateLink** cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.
+Trong workshop thực hành này, bạn sẽ:
 
-Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.
+- Tạo và cấu hình **Cognito User Pool** từ đầu
+- Tích hợp **AWS Amplify Gen 2 (v6+)** mới nhất với **Next.js 14 (App Router)**
+- Triển khai luồng xác thực hoàn chỉnh:  
+  Đăng ký → Xác minh email → Đăng nhập → Protected routes → Truy cập dựa trên vai trò
+- Tuân theo các thực hành tốt nhất sẵn sàng cho production (hỗ trợ SSR, xử lý token an toàn, kiến trúc sạch)
 
-Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).
-+ **Gateway** - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)
-+ **Interface** - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.
+**Kết quả cuối cùng:** Một ứng dụng Next.js hoạt động đầy đủ, bảo mật với xác thực người dùng — sẵn sàng deploy trên Vercel, Netlify, hoặc AWS Amplify Hosting.
 
-#### Nội dung
+## Nội dung Workshop
 
-1. [Tổng quan về workshop](5.1-Workshop-overview/)
-2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
-6. [Dọn dẹp tài nguyên](5.6-Cleanup/)
+1. **[Tổng quan Workshop](5.1-Workshop-overview/)**
+   - Amazon Cognito và AWS Amplify là gì?
+   - Tại sao sử dụng chúng cùng nhau?
+
+2. **[Các bước chuẩn bị](5.2-Prerequiste/)**
+   - Tài khoản AWS, IAM user, AWS CLI
+   - Node.js 18+, npm, VS Code
+
+3. **[Thiết lập AWS Cognito](5.3-AWS-Cognito/)**
+   - Tạo User Pool với đăng nhập email
+   - Cấu hình chính sách mật khẩu, MFA tùy chọn, App Client (không client secret)
+   - Tạo Cognito Groups (admin / user)
+
+4. **[Thiết lập dự án Next.js & Cấu hình Amplify](5.4-Next.js-setup/)**
+   - Tạo khung Next.js 14 với App Router + TypeScript + Tailwind CSS
+   - Cài đặt `aws-amplify@latest`
+   - Cấu hình environment variables và chế độ Amplify SSR
+
+5. **[Authentication Functions, UI và Protected Routes](5.5-Cognito-function/)**
+   - Helpers Cognito hoàn chỉnh: signUp, confirmSignUp, signIn, signOut, getCurrentUser, v.v.
+   - AuthContext toàn cục + custom `useAuth` hook
+   - Trang đăng ký, xác minh email, đăng nhập và quên mật khẩu
+   - Component ProtectedRoute
+   - Trang dashboard hiển thị thông tin người dùng và vai trò
+
+6. **[Kiểm tra & Xác minh đầy đủ](5.6-Testing/)**
+   - Danh sách kiểm tra end-to-end
+   - Lỗi phổ biến và mẹo khắc phục
+
+7. **[Dọn dẹp tài nguyên](5.7-Cleanup/)**
+   - Xóa User Pool và App Client để tránh phí không mong muốn
+
+---
+
+**Thời gian ước tính:** 3–4 giờ  
+**Độ khó:** Trung cấp (khuyến nghị có kiến thức cơ bản về React/Next.js)
+
+Hãy bắt đầu! → Click vào 5.1 **[Tổng quan Workshop](5.1-Workshop-overview/)** để bắt đầu.

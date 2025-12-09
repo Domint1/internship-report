@@ -1,6 +1,6 @@
 ---
 title: "Bản đề xuất"
-date: "`r Sys.Date()`"
+date: "2025-12-08"
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
