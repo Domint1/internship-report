@@ -1,4 +1,4 @@
-baseURL = "https://domint1.github.io/FCJ-Internship-Report"
+baseURL = https://domint1.github.io/FCJ-Internship-Report/"
 relativeURLs = false
 canonifyURLs = false
 defaultContentLanguage = "en"
