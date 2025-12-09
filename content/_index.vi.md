@@ -23,9 +23,9 @@ chapter: false
 
 &emsp; **Vị trí thực tập:** FCJ Cloud Intern
 
-&emsp; **Thời gian thực tập:** Từ ngày 12/08/2025 đến ngày 12/11/2025
+&emsp; **Thời gian thực tập:** Từ ngày 08/09/2025 đến ngày 24/12/2025
 
-![Ảnh đại diện của bạn](/images/avatar.png)
+<img src="/images/avatar.png" alt="Ảnh đại diện của bạn" style="width: 450px; height: 600px; object-fit: cover;">
 
 
 
