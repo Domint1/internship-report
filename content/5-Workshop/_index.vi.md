@@ -8,7 +8,7 @@ pre: " <b> 5. </b> "
 
 # Workshop AWS Cognito + Amplify SDK
 
-## Tổng quan
+### Tổng quan
 
 **Amazon Cognito** là dịch vụ quản lý xác thực người dùng, ủy quyền và quản lý người dùng được quản lý hoàn toàn, giúp dễ dàng thêm đăng ký, đăng nhập và kiểm soát truy cập vào các ứng dụng web và mobile.
 
@@ -22,7 +22,7 @@ Trong workshop thực hành này, bạn sẽ:
 
 **Kết quả cuối cùng:** Một ứng dụng Next.js hoạt động đầy đủ, bảo mật với xác thực người dùng — sẵn sàng deploy trên Vercel, Netlify, hoặc AWS Amplify Hosting.
 
-## Nội dung Workshop
+### Nội dung Workshop
 
 1. **[Tổng quan Workshop](5.1-Workshop-overview/)**
    - Amazon Cognito và AWS Amplify là gì?

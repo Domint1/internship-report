@@ -8,7 +8,7 @@ pre: " <b> 5. </b> "
 
 # AWS Cognito + Amplify SDK Workshop
 
-## Overview
+### Overview
 
 **Amazon Cognito** is a fully managed user authentication, authorization, and user management service that makes it easy to add sign-up, sign-in, and access control to web and mobile apps.
 
@@ -22,7 +22,7 @@ In this hands-on workshop, you will:
 
 **Final outcome:** A fully functional, secure Next.js application with user authentication — ready to deploy on Vercel, Netlify, or AWS Amplify Hosting.
 
-## Workshop Contents
+### Workshop Contents
 
 1. **[Workshop Overview](5.1-Workshop-overview/)**
    - What are Amazon Cognito and AWS Amplify?

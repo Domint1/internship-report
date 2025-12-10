@@ -6,10 +6,11 @@ chapter: false
 ---
 
 # Báo cáo thực tập
+
 ### Thông tin sinh viên:
 &emsp; **Họ và tên:** Nguyễn Đào Nguyên
 
-&emsp; **Số điện thoại:** 0918812220        
+&emsp; **Số điện thoại:** +84918812220        
 
 &emsp; **Email:** Nguyen2412qb@gmail.com
 
