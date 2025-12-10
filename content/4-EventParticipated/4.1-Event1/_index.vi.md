@@ -1,121 +1,66 @@
 ---
 title: "Event 1"
-date: "2025-12-08"
+date: "`r Sys.Date()`"
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài thu hoạch: AWS Cloud Day Vietnam 2025 - AI Edition (Truyền hình trực tiếp & Các sessions)
 
-### Mục Đích Của Sự Kiện
+### Mục tiêu sự kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- Kết nối các doanh nghiệp, người xây dựng và lãnh đạo tại Việt Nam để thúc đẩy đổi mới về cloud và AI, hỗ trợ chuyển đổi số quốc gia.
+- Tạo cơ hội cho người tham dự học hỏi về AI tạo sinh, công nghệ cloud hiện đại và các giải pháp số thực tế.
+- Chia sẻ câu chuyện thành công của khách hàng, các trường hợp sử dụng thực tế và thực tiễn tốt nhất để giúp các tổ chức áp dụng cloud và AI hiệu quả.
+- Tạo cơ hội kết nối giữa AWS, đối tác, startup và người tham dự để củng cố hệ sinh thái đổi mới.
 
-### Danh Sách Diễn Giả
+### Diễn giả
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- Eric Yeo, Country General Manager, Vietnam, Cambodia, Laos & Myanmar, AWS
+- Dr. Jens Lottner, CEO, Techcombank
+- Ms. Trang Phung, CEO & Co-Founder, U2U Network
+- Jaime Valles, Vice President, General Manager Asia Pacific and Japan, AWS
+- Jun Kai Loke, AI/ML Specialist SA, AWS
+- Kien Nguyen, Solutions Architect, AWS
+- Tamelly Lim, Storage Specialist SA, AWS
+- Binh Tran, Senior Solutions Architect, AWS
+- Taiki Dang, Solutions Architect, AWS
 
-### Nội Dung Nổi Bật
+### Điểm nhấn chính
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+- **Phiên toàn thể buổi sáng** bao gồm các bài phát biểu khai mạc của các nhà lãnh đạo cấp cao và giám đốc điều hành công ty; cùng với các bài thuyết trình chính và câu chuyện khách hàng từ các tổ chức lớn của Việt Nam.
+- **Nhiều track phân nhóm**, như:
+    - Track Dữ liệu & AI Tạo sinh — tập trung vào cách các tổ chức sử dụng AI/ML, phân tích dữ liệu và các ứng dụng GenAI trong bối cảnh kinh doanh thực tế.
+    - Migration & Modernization — các phiên về di chuyển lên cloud, hiện đại hóa ứng dụng cũ, tích hợp GenAI vào quy trình DevOps, xây dựng cơ sở hạ tầng có thể mở rộng và bền vững.
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+### Những điểm rút ra chính
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+- Sự kiện được thiết kế để mang lại giá trị cho cả đối tượng kinh doanh và kỹ thuật: dù bạn là người ra quyết định, lãnh đạo doanh nghiệp, người sáng lập startup hay nhà phát triển, đều có các track phù hợp.
+- Câu chuyện khách hàng thực tế và các trường hợp sử dụng đa ngành giúp thu hẹp khoảng cách giữa lý thuyết cloud/AI và việc áp dụng kinh doanh thực tế tại Việt Nam.
+- Cấu trúc từ bài thuyết trình chính đến phân nhóm hỗ trợ cả tư duy cấp chiến lược (chuyển đổi số, gián đoạn ngành) và học tập kỹ thuật cấp cơ sở (migration, tích hợp GenAI, hiện đại hóa).
+- Kết nối và tương tác trực tiếp với các chuyên gia AWS hoặc đối tác có thể mở khóa hợp tác, quan hệ đối tác và tăng tốc đổi mới cho người tham dự hoặc tổ chức của họ.
+- Đối với tôi như một sinh viên, cách thức này cung cấp một cách tốt để tiếp xúc với cách cloud & AI đang được sử dụng ngay bây giờ trong các doanh nghiệp Việt Nam thực tế.
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+### Trải nghiệm sự kiện
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+Tham dự **AWS Cloud Day Vietnam** mang lại cho tôi một trải nghiệm rộng lớn, có cấu trúc tốt kết hợp những hiểu biết chiến lược, học tập thực hành và tiếp xúc trực tiếp với các triển khai cloud và AI thực tế qua nhiều ngành.
 
-#### Domain-Driven Design (DDD)
+#### Các phiên thuyết trình chính hấp dẫn
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+- Các lãnh đạo cấp cao của AWS và chuyên gia ngành cung cấp những hiểu biết về **chuyển đổi số của Việt Nam**, xu hướng áp dụng cloud và tác động thực tế của AI tạo sinh.
+- Câu chuyện thành công của khách hàng từ các doanh nghiệp lớn cung cấp các ví dụ cụ thể về **hiện đại hóa dữ liệu** và **đổi mới được thúc đẩy bởi AI** ở quy mô lớn.
 
-#### Event-Driven Architecture
+#### Tiếp xúc thực tế qua các demo
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+- Các kỹ sư AWS và đối tác cung cấp giải thích trực tiếp về kiến trúc, giúp tôi kết nối các ý tưởng cấp cao với các triển khai thực tế.
 
-#### Compute Evolution
+#### Tương tác cộng đồng và kết nối
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+- Các cuộc trò chuyện với kỹ sư, người sáng lập startup và trưởng nhóm kỹ thuật giúp tôi thấy cách các nhóm khác nhau tiếp cận giải quyết vấn đề với các dịch vụ cloud.
+- Những trao đổi này giúp tôi hiểu rõ hơn về cách áp dụng cloud khác nhau giữa các ngành và cách các nhóm thu hẹp khoảng cách giữa mục tiêu kinh doanh và chiến lược kỹ thuật.
 
-#### Amazon Q Developer
+#### Những suy ngẫm chính
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
-
-### Những Gì Học Được
-
-#### Tư Duy Thiết Kế
-
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
-
-#### Kiến Trúc Kỹ Thuật
-
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
-
-### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
-
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+- Việc thấy các trường hợp sử dụng thực tế của Việt Nam khiến các khái niệm trở nên có cơ sở hơn và dễ kết nối hơn.
+- Sự kết hợp giữa các buổi nói chuyện chiến lược, demo thực tế và lab thực hành tạo ra một bức tranh cân bằng về những gì cần thiết để xây dựng, mở rộng và hiện đại hóa hệ thống trên AWS ngày nay.

@@ -1,6 +1,6 @@
 ---
 title: "Blog 3"
-date: "2025-12-08"
+date: "`r Sys.Date()`"
 weight: 1
 chapter: false
 pre: " <b> 3.3. </b> "
