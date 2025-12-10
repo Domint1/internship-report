@@ -1,6 +1,6 @@
 ---
 title: "Sharing and Feedback"
-date: "2025-12-08"
+date: "`r Sys.Date()`"
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
@@ -32,6 +32,7 @@ The company provides an internship allowance and offers flexible working hours w
 
 ### Additional Questions
 - What did you find **most satisfying** during your internship?  
+- 
 - What do you think the company **should improve** for future interns?  
 - If recommending to a friend, would you **suggest they intern here**? Why or why not?  
 

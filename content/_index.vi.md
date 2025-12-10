@@ -1,6 +1,6 @@
 ---
 title: "Báo cáo thực tập"
-date: "2025-12-08"
+date: "`r Sys.Date()`"
 weight: 1
 chapter: false
 ---
@@ -15,15 +15,14 @@ chapter: false
 
 &emsp; **Trường:** Đại học FPT
 
-&emsp; **Ngành:** Công nghệ thông tin
+&emsp; **Ngành:** An toàn thông tin
 
-&emsp; **Lớp:** AWS082025
-
+<!-- &emsp; **Class:** AWS082025 -->
 &emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam
 
 &emsp; **Vị trí thực tập:** FCJ Cloud Intern
 
-&emsp; **Thời gian thực tập:** Từ ngày 08/09/2025 đến ngày 24/12/2025
+&emsp; **Thời gian thực tập:** Từ ngày 08/09/2025 đến ngày 09/12/2025
 
 <img src="/images/avatar.png" alt="Ảnh đại diện của bạn" style="width: 450px; height: 600px; object-fit: cover;">
 

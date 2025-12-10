@@ -1,6 +1,6 @@
 ---
 title: "Internship Report"
-date: "2025-12-08"
+date: "`r Sys.Date()`"
 weight: 1
 chapter: false
 ---
@@ -19,15 +19,15 @@ chapter: false
 
 &emsp; **University:** FPT University
 
-&emsp; **Major:** Information Technology
+&emsp; **Major:** Information Assuarance
 
-&emsp; **Class:** AWS082025
+<!--&emsp; **Class:** AWS082025-->
 
 &emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
 
 &emsp; **Internship Position:** FCJ Cloud Intern
 
-&emsp; **Internship Duration:** From 12/08/2025 to 12/11/2025
+&emsp; **Internship Duration:** From 08/99/2025 to 09/12/2025
 
 <img src="/images/avatar.png" alt="Your Avatar" style="width: 450px; height: 600px; object-fit: cover;">
 
